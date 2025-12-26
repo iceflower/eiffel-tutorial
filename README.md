@@ -27,6 +27,7 @@
 [EiffelStudio 다운로드](https://www.eiffel.com/eiffelstudio/)에서 **Community Edition**(무료, 오픈소스)을 다운로드하세요.
 
 **EiffelStudio 25.02 새 기능 (2025년 2월):**
+
 - SVG 다이어그램 내보내기
 - MongoDB/MariaDB 라이브러리
 - EIFDATA 디렉토리 중앙 관리
@@ -166,7 +167,7 @@ end
 
 ## 프로젝트 구조
 
-```
+```text
 eiffel-tutorial/
 ├── README.md                    # 이 파일
 ├── 01_hello_world/              # Hello World
@@ -205,7 +206,7 @@ eiffel-tutorial/
 
 ## 학습 경로
 
-```
+```text
 ┌─────────────────────────────────────────────────────────┐
 │                    기초 문법 (1-3)                        │
 │         시작하기 → 변수와 타입 → 조건문/반복문             │
@@ -249,23 +250,28 @@ eiffel-tutorial/
 ## 참고 자료
 
 ### 공식 자료
+
 - [Eiffel.org](https://www.eiffel.org/) - 공식 사이트
 - [EiffelStudio](https://www.eiffel.com/eiffelstudio/) - IDE 다운로드
 - [공식 튜토리얼](https://www.eiffel.org/doc/eiffel/An_Eiffel_Tutorial_(ET))
 
 ### EiffelStudio 릴리스
+
 - [EiffelStudio 25.02](https://www.eiffel.com/2025/eiffelstudio-25-02/) - 최신 버전
 - [EiffelStudio 24.05](https://www.eiffel.com/2024/eiffelstudio-24-05/) - .NET 8.0 지원
 
 ### Design by Contract
+
 - [DbC 소개](https://www.eiffel.com/values/design-by-contract/introduction/)
 - [Object-Oriented Software Construction (책)](https://www.eiffel.com/resources/books/)
 
 ### 웹 개발
+
 - [EWF GitHub](https://github.com/EiffelWebFramework/EWF)
 - [EWF 문서](https://github.com/EiffelWebFramework/EWF/tree/master/doc)
 
 ### 커뮤니티
+
 - [Eiffel Users Group](https://groups.google.com/g/eiffel-users)
 - [GitHub - EiffelStudio](https://github.com/EiffelSoftware/EiffelStudio)
 - [Awesome Eiffel](https://github.com/seamus-brady/awesome-eiffel)

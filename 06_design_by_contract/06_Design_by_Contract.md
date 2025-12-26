@@ -12,7 +12,7 @@ Design by Contract는 에펠의 **가장 중요한 특징**입니다. Bertrand M
 
 ### 일상의 계약 비유
 
-```
+```text
 고객(Client)과 공급자(Supplier)의 계약:
 
 고객의 의무 (사전 조건):
@@ -135,6 +135,7 @@ end
 ### 검사 시점
 
 불변식은 다음 시점에 검사됩니다:
+
 1. 생성자 실행 후
 2. public feature 호출 전
 3. public feature 실행 후
@@ -252,7 +253,8 @@ require
 ```
 
 위반 시 에러 메시지에 레이블이 표시됩니다:
-```
+
+```text
 Precondition violation: positive_amount in BANK_ACCOUNT.withdraw
 ```
 
@@ -482,11 +484,12 @@ withdraw (amount: INTEGER)
 
 EiffelStudio의 AutoTest는 DbC 계약을 활용하여 자동으로 테스트를 생성합니다.
 
-```
+```text
 EiffelStudio → Testing → AutoTest → 클래스 선택 → Run
 ```
 
 AutoTest는:
+
 1. 랜덤 입력값 생성
 2. require 조건을 만족하는 값만 사용
 3. ensure/invariant 위반 시 버그 보고
