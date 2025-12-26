@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$\\(cat <<''EOF''\nASCII 다이어그램을 Mermaid로 변환\n\n- README.md: 학습 경로 다이어그램 \\(flowchart\\)\n- 05_상속.md: 다이아몬드 상속 구조 \\(classDiagram\\)\n- 06_Design_by_Contract.md: 계약 비유 다이어그램 \\(flowchart\\)\n- 07_웹서버.md: EWF 아키텍처 다이어그램 \\(flowchart\\)\n\n🤖 Generated with [Claude Code]\\(https://claude.com/claude-code\\)\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
+    ]
+  }
+}

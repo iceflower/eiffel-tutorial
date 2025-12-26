@@ -12,20 +12,26 @@ Design by Contract는 에펠의 **가장 중요한 특징**입니다. Bertrand M
 
 ### 일상의 계약 비유
 
-```text
-고객(Client)과 공급자(Supplier)의 계약:
+```mermaid
+flowchart LR
+    subgraph client["고객(Client)의 의무<br/>사전 조건"]
+        C1[유효한 신용카드 제시]
+        C2[18세 이상]
+    end
 
-고객의 의무 (사전 조건):
-- 유효한 신용카드 제시
-- 18세 이상
+    subgraph supplier["공급자(Supplier)의 의무<br/>사후 조건"]
+        S1[상품 배송]
+        S2[영수증 발급]
+    end
 
-공급자의 의무 (사후 조건):
-- 상품 배송
-- 영수증 발급
+    subgraph invariant["불변 조건"]
+        I1["상품 재고 >= 0"]
+        I2[거래 기록 보관]
+    end
 
-불변 조건:
-- 상품 재고 >= 0
-- 거래 기록 보관
+    client -->|계약 체결| supplier
+    invariant -.->|항상 유지| client
+    invariant -.->|항상 유지| supplier
 ```
 
 ---
