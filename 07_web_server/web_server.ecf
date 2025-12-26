@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-21-0"
+        name="web_server"
+        uuid="77777777-7777-7777-7777-777777777777">
+    <target name="web_server">
+        <root class="APPLICATION" feature="make_and_launch"/>
+
+        <option warning="true">
+            <assertions precondition="true" postcondition="true"/>
+        </option>
+
+        <!-- 기본 라이브러리 -->
+        <library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
+
+        <!-- EWF 라이브러리들 -->
+        <!-- wsf: Web Server Foundation -->
+        <library name="wsf" location="$ISE_LIBRARY\contrib\library\web\framework\ewf\wsf\wsf.ecf"/>
+
+        <!-- Nino: 독립 실행형 HTTP 서버 -->
+        <library name="wsf_nino" location="$ISE_LIBRARY\contrib\library\web\framework\ewf\wsf\connector\nino\wsf_nino.ecf"/>
+
+        <!-- 소스 코드 위치 -->
+        <cluster name="src" location=".\" recursive="true"/>
+    </target>
+</system>

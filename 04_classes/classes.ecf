@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-21-0"
+        name="classes"
+        uuid="44444444-4444-4444-4444-444444444444">
+    <target name="classes">
+        <root class="MAIN" feature="make"/>
+        <option warning="true">
+            <assertions precondition="true" postcondition="true" invariant="true"/>
+        </option>
+        <library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
+        <cluster name="src" location=".\" recursive="true"/>
+    </target>
+</system>

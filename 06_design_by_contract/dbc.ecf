@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-21-0"
+        name="dbc"
+        uuid="66666666-6666-6666-6666-666666666666">
+    <target name="dbc">
+        <root class="MAIN" feature="make"/>
+        <option warning="true">
+            <!-- assertion 옵션: 계약 검사 활성화 -->
+            <assertions precondition="true" postcondition="true" invariant="true" check="true"/>
+        </option>
+        <library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
+        <cluster name="src" location=".\" recursive="true"/>
+    </target>
+</system>

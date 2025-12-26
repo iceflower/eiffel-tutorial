@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-21-0"
+        name="control_flow"
+        uuid="33333333-3333-3333-3333-333333333333">
+    <target name="control_flow">
+        <root class="CONTROL_FLOW" feature="make"/>
+        <option warning="true">
+            <assertions precondition="true" postcondition="true" invariant="true"/>
+        </option>
+        <library name="base" location="$ISE_LIBRARY\library\base\base.ecf"/>
+        <cluster name="src" location=".\" recursive="true"/>
+    </target>
+</system>
